@@ -1,0 +1,1054 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Quentin Grant — Cloud Support Associate | Technical Portfolio, skills, experience, and contact." />
+  <meta property="og:title" content="Quentin Grant | Technical Portfolio" />
+  <meta property="og:description" content="Cloud Support Associate• Google Cloud Cybersecurity Professional• AWS Cloud Practitioner" />
+  <meta property="og:type" content="website" />
+  <!-- ✅ Profile photo for link previews (make sure the file is in the same folder as this HTML) -->
+  <meta property="og:image" content="profile.jpg.jpg" />
+
+  <title>Quentin Grant | Technical Portfolio</title>
+
+  <style>
+    :root{
+      --max: 1120px;
+      --radius: 18px;
+      --shadow: 0 16px 50px rgba(255,255,255,.09);
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      --focus: #111;
+    }
+
+    /* ===== THEME TOKENS =====
+      data-theme: aurora | cobalt | orchid | ember
+      data-mode : dark | light
+    */
+
+    body{
+      --bg:#0b0f14;
+      --surface: rgba(255,255,255,.09);
+      --surface2: rgba(255,255,255,.09);
+      --text:#f5f7fb;
+      --muted:#b8c2d4;
+      --line: rgba(255,255,255,.14);
+
+      --a1:#3b82f6;
+      --a2:#22c55e;
+      --a3:#a78bfa;
+      --a4:#f59e0b;
+
+      --bg0: radial-gradient(900px 500px at 20% 10%, rgba(59,130,246,.25), transparent 60%),
+             radial-gradient(850px 520px at 85% 25%, rgba(34,197,94,.18), transparent 60%),
+             radial-gradient(800px 520px at 55% 90%, rgba(167,139,250,.18), transparent 60%),
+             linear-gradient(180deg, #0b0f14 0%, #06080b 100%);
+    }
+
+
+
+
+    /* AURORA */
+    body[data-theme="aurora"][data-mode="dark"]{
+      --bg:#0b0f14;
+      --surface: rgba(255,255,255,.06);
+      --surface2: rgba(255,255,255,.09);
+      --text:#f5f7fb;
+      --muted:#b8c2d4;
+      --line: rgba(255,255,255,.14);
+      --a1:#22c55e; --a2:#3b82f6; --a3:#a78bfa; --a4:#f59e0b;
+      --bg0: radial-gradient(900px 520px at 18% 12%, rgba(34,197,94,.24), transparent 62%),
+             radial-gradient(820px 520px at 86% 26%, rgba(77, 117, 181, 0.22), transparent 60%),
+             radial-gradient(900px 560px at 60% 92%, rgba(167,139,250,.18), transparent 62%),
+             linear-gradient(180deg, #0b0f14 0%, #05070a 100%);
+    }
+
+    body[data-theme="aurora"][data-mode="light"]{
+      --bg:#ffffff;
+      --surface: rgba(2,6,23,.04);
+      --surface2: rgba(2,6,23,.06);
+      --text:#0b1220;
+      --muted:#334155;
+      --line: rgba(2,6,23,.12);
+      --a1:#16a34a; --a2:#2563eb; --a3:#7c3aed; --a4:#d97706;
+      --bg0: radial-gradient(900px 520px at 18% 12%, rgba(22,163,74,.10), transparent 62%),
+             radial-gradient(820px 520px at 86% 26%, rgba(37,99,235,.10), transparent 60%),
+             radial-gradient(900px 560px at 60% 92%, rgba(124,58,237,.08), transparent 62%),
+             linear-gradient(180deg, #ffffff 0%, #f5f7fb 100%);
+    }
+
+
+
+
+    /* COBALT */
+    body[data-theme="cobalt"][data-mode="dark"]{
+      --bg:#050816;
+      --surface: rgba(96,165,250,.10);
+      --surface2: rgba(96,165,250,.14);
+      --text:#eef6ff;
+      --muted:#a9c8ff;
+      --line: rgba(96,165,250,.24);
+      --a1:#60a5fa; --a2:#22d3ee; --a3:#a78bfa; --a4:#f59e0b;
+      --bg0: radial-gradient(980px 560px at 15% 10%, rgba(96,165,250,.28), transparent 60%),
+             radial-gradient(860px 520px at 86% 22%, rgba(34,211,238,.18), transparent 60%),
+             linear-gradient(180deg, #050816 0%, #02030a 100%);
+    }
+
+    body[data-theme="cobalt"][data-mode="light"]{
+      --bg:#f8fbff;
+      --surface: rgba(15,23,42,.04);
+      --surface2: rgba(15,23,42,.06);
+      --text:#0f172a;
+      --muted:#334155;
+      --line: rgba(15,23,42,.12);
+      --a1:#2563eb; --a2:#0891b2; --a3:#7c3aed; --a4:#d97706;
+      --bg0: radial-gradient(980px 560px at 15% 10%, rgba(37,99,235,.12), transparent 60%),
+             radial-gradient(860px 520px at 86% 22%, rgba(8,145,178,.10), transparent 60%),
+             linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%);
+    }
+
+
+
+
+    /* ORCHID */
+    body[data-theme="orchid"][data-mode="dark"]{
+      --bg:#0c0416;
+      --surface: rgba(168,85,247,.12);
+      --surface2: rgba(236,72,153,.10);
+      --text:#faf5ff;
+      --muted:#dcc7ff;
+      --line: rgba(168,85,247,.26);
+      --a1:#a855f7; --a2:#ec4899; --a3:#22d3ee; --a4:#f59e0b;
+      --bg0: radial-gradient(980px 560px at 18% 12%, rgba(168,85,247,.26), transparent 60%),
+             radial-gradient(860px 520px at 84% 22%, rgba(236,72,153,.18), transparent 60%),
+             linear-gradient(180deg, #0c0416 0%, #040008 100%);
+    }
+
+    body[data-theme="orchid"][data-mode="light"]{
+      --bg:#ffffff;
+      --surface: rgba(88,28,135,.05);
+      --surface2: rgba(190,24,93,.05);
+      --text:#2e1065;
+      --muted:#5b21b6;
+      --line: rgba(88,28,135,.14);
+      --a1:#6d28d9; --a2:#be185d; --a3:#0891b2; --a4:#d97706;
+      --bg0: radial-gradient(980px 560px at 18% 12%, rgba(109,40,217,.10), transparent 60%),
+             radial-gradient(860px 520px at 84% 22%, rgba(190,24,93,.08), transparent 60%),
+             linear-gradient(180deg, #ffffff 0%, #fbf7ff 100%);
+    }
+
+
+
+
+    /* EMBER */
+    body[data-theme="ember"][data-mode="dark"]{
+      --bg:#120601;
+      --surface: rgba(249,115,22,.12);
+      --surface2: rgba(244,63,94,.10);
+      --text:#fff7ed;
+      --muted:#ffd6b0;
+      --line: rgba(249,115,22,.26);
+      --a1:#f97316; --a2:#f43f5e; --a3:#22c55e; --a4:#60a5fa;
+      --bg0: radial-gradient(980px 560px at 18% 12%, rgba(249,115,22,.26), transparent 60%),
+             radial-gradient(860px 520px at 84% 22%, rgba(244,63,94,.18), transparent 60%),
+             linear-gradient(180deg, #120601 0%, #060200 100%);
+    }
+
+
+    body[data-theme="ember"][data-mode="light"]{
+      --bg:#ffffff;
+      --surface: rgba(124,45,18,.05);
+      --surface2: rgba(190,18,60,.04);
+      --text:#431407;
+      --muted:#7c2d12;
+      --line: rgba(124,45,18,.14);
+      --a1:#ea580c; --a2:#be123c; --a3:#16a34a; --a4:#2563eb;
+      --bg0: radial-gradient(980px 560px at 18% 12%, rgba(234,88,12,.10), transparent 60%),
+             radial-gradient(860px 520px at 84% 22%, rgba(190,18,60,.08), transparent 60%),
+             linear-gradient(180deg, #ffffff 0%, #fff7ed 100%);
+    }
+
+
+    
+    /* ===== Layout ===== */
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:var(--sans);
+      background: var(--bg0);
+      color:var(--text);
+      line-height:1.6;
+    }
+
+    a{color:inherit; text-decoration:none}
+    a:hover{text-decoration:underline; opacity:.95}
+    :focus-visible{outline:2px solid var(--a2); outline-offset:3px; border-radius:12px;}
+
+    .skip{
+      position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden;
+    }
+    .skip:focus{
+      left:16px; top:16px; width:auto; height:auto; padding:10px 12px;
+      border:1px solid var(--line); background:var(--bg); border-radius:12px; z-index:9999;
+    }
+
+    header{
+  position:sticky;
+  top:0;
+  z-index:50;
+
+  backdrop-filter:saturate(180%) blur(10px);
+
+
+
+
+
+  /* LIGHTER BACKGROUND — matches cards */
+  background: linear-gradient(180deg, var(--surface2), var(--surface));
+
+  border-bottom:1px solid var(--line);
+
+
+
+
+
+  /* subtle depth so it still floats */
+  box-shadow: 0 8px 24px rgba(0,0,0,.15);
+}
+    
+    .topbar{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:14px 18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+
+    .brand{
+      display:flex; align-items:center; gap:12px;
+      min-width:240px;
+    }
+    .logo{
+      width:38px; height:38px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background:
+        radial-gradient(12px 12px at 25% 25%, color-mix(in oklab, var(--a2) 55%, transparent), transparent 70%),
+        radial-gradient(16px 16px at 70% 70%, color-mix(in oklab, var(--a1) 55%, transparent), transparent 70%),
+        linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.02));
+      display:grid; place-items:center;
+      font-family:var(--mono);
+      letter-spacing:.08em;
+    }
+    .brand h1{
+      margin:0; font-size:14px;
+      letter-spacing:.12em; text-transform:uppercase; font-weight:700;
+      position:relative; padding-bottom:5px;
+    }
+    .brand h1::after{
+      content:"";
+      position:absolute; left:0; bottom:0;
+      height:2px; width:76px; border-radius:999px;
+      background: linear-gradient(90deg, var(--a1), var(--a2), var(--a3));
+      background-size: 200% 100%;
+      animation: sweep 2.8s linear infinite;
+      opacity:.9;
+    }
+    @keyframes sweep{ 0%{background-position:0% 50%} 100%{background-position:200% 50%} }
+    .brand p{
+      margin:0;
+      font-size:12px;
+      color:var(--muted);
+      font-family:var(--mono);
+    }
+
+
+    nav{display:flex; gap:8px; flex-wrap:wrap; justify-content:flex-end; align-items:center;}
+    nav a{
+      font-family:var(--mono);
+      font-size:12px;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+      color:var(--muted);
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid transparent;
+    }
+
+
+    nav a:hover{border-color:var(--line); background:rgba(255,255,255,.04); color:var(--text); text-decoration:none}
+
+    .actions{display:flex; gap:10px; align-items:center; flex-wrap:wrap; justify-content:flex-end;}
+    .btn{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:10px 12px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.04);
+      color:var(--text);
+      font-family:var(--mono);
+      font-size:12px;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      cursor:pointer;
+    }
+
+    .btn:hover{background:rgba(255,255,255,.06)}
+    .btn.primary{
+      border-color: color-mix(in oklab, var(--a2) 55%, var(--line));
+      background: linear-gradient(180deg,
+        color-mix(in oklab, var(--a1) 18%, rgba(255,255,255,.18)),
+        color-mix(in oklab, var(--a2) 12%, rgba(255,255,255,.06))
+      );
+    }
+
+    main{max-width:var(--max); margin:0 auto; padding:28px 18px 72px;}
+    .card{
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      background: linear-gradient(180deg, var(--surface2), var(--surface));
+    }
+
+    .hero{
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    .hero .left{padding:26px}
+    .hero .right{padding:22px; display:flex; flex-direction:column; gap:14px}
+
+    .heroTop{display:flex; align-items:center; gap:18px; flex-wrap:wrap; margin-bottom:12px;}
+
+
+
+
+
+    /* ✅ UPDATED: profile photo is now full color + theme ring */
+    .avatar{
+      width:112px; height:112px; border-radius:50%;
+      object-fit:cover;
+
+      filter:none;
+
+      border:3px solid transparent;
+      background:
+        linear-gradient(var(--bg), var(--bg)) padding-box,
+        linear-gradient(90deg, var(--a1), var(--a2), var(--a3), var(--a4)) border-box;
+
+      box-shadow: 0 18px 40px rgba(0,0,0,.30);
+      transition: .25s ease;
+    }
+    .avatar:hover{
+      transform: translateY(-1px) scale(1.02);
+    }
+
+    .kicker{
+      display:inline-flex; align-items:center; gap:10px;
+      font-family:var(--mono);
+      font-size:12px; letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .dot{
+      width:8px; height:8px; border-radius:50%;
+      background: linear-gradient(90deg, var(--a1), var(--a2));
+      box-shadow: 0 0 0 4px color-mix(in oklab, var(--a2) 25%, transparent);
+    }
+    .headline{
+      margin:10px 0 10px;
+      font-size:38px;
+      line-height:1.15;
+      letter-spacing:-0.02em;
+    }
+    .sub{
+      margin:0;
+      color:var(--muted);
+      font-size:15px;
+      max-width:68ch;
+    }
+
+    .meta{display:flex; flex-wrap:wrap; gap:10px; margin-top:16px;}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:9px 12px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.09);
+      font-family:var(--mono);
+      font-size:12px;
+      color:var(--muted);
+    }
+
+    .section{margin-top:18px; padding:22px; position:relative; overflow:hidden;}
+    .section::before{
+      content:"";
+      position:absolute; left:0; top:0; right:0;
+      height:3px;
+      background: linear-gradient(90deg, var(--a1), var(--a2), var(--a3), var(--a4));
+      opacity:.85;
+    }
+    .section h2{
+      margin:0 0 12px;
+      font-size:14px;
+      font-family:var(--mono);
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      color:var(--muted);
+      display:inline-flex; align-items:center; gap:10px;
+    }
+    .section h2::after{
+      content:"";
+      height:2px; width:48px; border-radius:999px;
+      background: linear-gradient(90deg, var(--a2), var(--a3));
+      opacity:.9;
+    }
+
+    .grid{display:grid; grid-template-columns: 1fr 1fr; gap:16px;}
+    .twoCol{display:grid; grid-template-columns: 1fr 1fr; gap:16px;}
+
+    .item{
+      padding:16px;
+      border-radius:16px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      position:relative;
+      overflow:hidden;
+    }
+    .item h3{margin:0 0 6px; font-size:16px}
+    .where{font-family:var(--mono); font-size:12px; color:var(--muted)}
+    .small{font-size:12px; color:var(--muted)}
+    .divider{height:1px; background:var(--line); margin:14px 0}
+    .item ul{margin:10px 0 0 18px; color:var(--muted)}
+    .item li{margin:6px 0}
+
+
+
+
+
+    /* colorful rails for projects/experience/skills */
+    #projects .item::before,
+    #experience .item::before,
+    .skillCard::before{
+      content:"";
+      position:absolute; left:0; top:0;
+      width:4px; height:100%;
+      opacity:.9;
+    }
+    #projects .item::before{background: linear-gradient(180deg, var(--a1), var(--a2), var(--a3));}
+    #projects .item:nth-child(2)::before{background: linear-gradient(180deg, var(--a2), var(--a3), var(--a4));}
+    #projects .item:nth-child(3)::before{background: linear-gradient(180deg, var(--a3), var(--a4), var(--a1));}
+    #projects .item:nth-child(4)::before{background: linear-gradient(180deg, var(--a4), var(--a1), var(--a2));}
+
+    #experience .item::before{background: linear-gradient(180deg, var(--a2), var(--a1));}
+
+    .skillCard{position:relative; overflow:hidden;}
+    .skillCard[data-skill="cloud"]::before{background: linear-gradient(180deg, var(--a2), transparent);}
+    .skillCard[data-skill="security"]::before{background: linear-gradient(180deg, var(--a1), transparent);}
+    .skillCard[data-skill="tools"]::before{background: linear-gradient(180deg, var(--a3), transparent);}
+    .skillCard[data-skill="strengths"]::before{background: linear-gradient(180deg, var(--a4), transparent);}
+
+
+
+    
+
+    /* pills */
+    .pills{display:flex; flex-wrap:wrap; gap:8px; margin:8px 0 6px;}
+    .pill{
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid color-mix(in oklab, var(--pillAccent) 55%, var(--line));
+      background: color-mix(in oklab, var(--pillAccent) 12%, rgba(255,255,255,.02));
+      font-family:var(--mono);
+      font-size:11px;
+      letter-spacing:.02em;
+      color: var(--text);
+    }
+    .pill[data-pill="aws"]{--pillAccent: var(--a2);}
+    .pill[data-pill="network"]{--pillAccent: var(--a1);}
+    .pill[data-pill="security"]{--pillAccent: var(--a3);}
+    .pill[data-pill="ops"]{--pillAccent: var(--a4);}
+    .pill[data-pill="storage"]{--pillAccent: color-mix(in oklab, var(--a2) 55%, var(--a1));}
+    .pill[data-pill="web"]{--pillAccent: color-mix(in oklab, var(--a1) 55%, var(--a3));}
+    .pill[data-pill="docs"]{--pillAccent: color-mix(in oklab, var(--a3) 55%, var(--a4));}
+
+
+
+
+
+    /* tag stack with rotating accents */
+    .stack{display:flex; flex-wrap:wrap; gap:8px;}
+    .tag{
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid color-mix(in oklab, var(--tagAccent) 55%, var(--line));
+      background: color-mix(in oklab, var(--tagAccent) 12%, rgba(255,255,255,.02));
+      font-family:var(--mono);
+      font-size:12px;
+      color: var(--text);
+    }
+    .stack .tag:nth-child(4n+1){--tagAccent: var(--a1);}
+    .stack .tag:nth-child(4n+2){--tagAccent: var(--a2);}
+    .stack .tag:nth-child(4n+3){--tagAccent: var(--a3);}
+    .stack .tag:nth-child(4n+4){--tagAccent: var(--a4);}
+
+
+
+
+
+    /* badges */
+    .badges{display:flex; flex-wrap:wrap; gap:10px; margin-top:12px;}
+    .badge{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:10px 12px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      font-family:var(--mono);
+      font-size:12px;
+    }
+    .badge .pillDot{width:10px; height:10px; border-radius:50%; background: var(--b); box-shadow:0 0 0 4px color-mix(in oklab, var(--b) 25%, transparent);}
+    .badge[data-brand="google"]{--b:#4285F4;}
+    .badge[data-brand="aws"]{--b:#FF9900;}
+    .badge[data-brand="security"]{--b:#22c55e;}
+
+
+
+
+    /* form */
+    input, textarea{
+      width:100%;
+      margin:6px 0 12px;
+      padding:10px 12px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background: rgba(0,0,0,.18);
+      color: var(--text);
+      font-family: var(--sans);
+    }
+    body[data-mode="light"] input, body[data-mode="light"] textarea{
+      background: rgba(255,255,255,.65);
+    }
+
+    .footer{
+      margin-top:24px;
+      padding:18px;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+      font-family:var(--mono);
+      font-size:12px;
+      display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;
+    }
+
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .twoCol{grid-template-columns:1fr}
+      .headline{font-size:32px}
+      nav{display:none}
+      .brand{min-width:auto}
+    }
+
+    @media print{
+      header{position:static; backdrop-filter:none; background:#fff;}
+      body{background:#fff; color:#000}
+      .card,.item{box-shadow:none}
+      a{color:#000}
+    }
+
+
+
+
+    /* Bigger City/State + Date text */
+.meta .chip{
+  font-size: 12px;     /* was 12px */
+  padding: 10px 12px;  /* a little bigger to match */
+}
+
+
+
+
+/* Dates live inside .where */
+.where{
+  font-size: 12px;     /* was 12px */
+  line-height: 1.4;
+}
+    
+
+
+
+
+/* This is for the headline title of occupation*/
+.headline{
+  font-size: clamp(24px, 3vw, 30px);
+  line-height: 1.2;
+}
+
+    
+  </style>
+</head>
+
+<body data-theme="aurora" data-mode="dark">
+  <a class="skip" href="#content">Skip to content</a>
+
+  <header>
+    <div class="topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">QG</div>
+        <div>
+          <h1>Quentin Grant</h1>
+          <p>AWS • IT Operations • Security</p>
+        </div>
+      </div>
+
+      <nav aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="actions">
+        <button class="btn" id="themeBtn" type="button">Theme: Aurora</button>
+        <button class="btn" id="modeBtn" type="button">Mode: Dark</button>
+        <a class="btn" href="mailto:Grant.quent@gmail.com">Email</a>
+        <a class="btn primary" href="https://www.linkedin.com/in/quentingrant/" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="content">
+
+    
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="card left">
+        <div class="heroTop">
+          <a href="https://www.linkedin.com/in/quentingrant/" target="_blank" rel="noreferrer" aria-label="Open Quentin Grant LinkedIn profile">
+            <!-- ✅ Profile photo file: profile.jpg.jpg -->
+            <img class="avatar" src="profile.jpg.jpg" alt="Quentin Grant profile photo" />
+          </a>
+          <div>
+            <div class="kicker"><span class="dot"></span>Technical Portfolio</div>
+            <div class="small" style="margin-top:6px;">Cloud Support Associate | AWS Cloud Practitioner</div>
+          </div>
+        </div>
+
+        <h3 class="headline">Cloud Support Associate</h3>
+        <p class="sub">
+          Cloud Support Associate with a Master's in Information Systems and hands-on experience deploying highly available and secure AWS environments.
+          Skilled in VPC design, IAM security, EC2 automation, and CloudWatch monitoring. 
+        </p>
+
+        <div class="meta" aria-label="Quick facts">
+          <span class="chip">Blythewood, South Carolina</span>
+          <span class="chip"><a href="mailto:Grant.quent@gmail.com">Grant.quent@gmail.com</a></span>
+        </div>
+
+        <div style="margin-top:18px; display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <button class="btn" id="copyEmail" type="button">Copy Email</button>
+        </div>
+
+        <div class="divider"></div>
+        <div class="small">Certifications</div>
+        <div class="badges" aria-label="Certifications">
+          <span class="badge" data-brand="google"><span class="pillDot" aria-hidden="true"></span> Google Cloud Cybersecurity Professional</span>
+          <span class="badge" data-brand="aws"><span class="pillDot" aria-hidden="true"></span> AWS Cloud Practitioner</span>
+          <span class="badge" data-brand="security"><span class="pillDot" aria-hidden="true"></span> Zero Trust (In Progress)</span>
+        </div>
+      </div>
+
+      <aside class="card right" aria-label="Highlights">
+        <div class="item" style="border:none; background:transparent; padding:0;">
+          <h3 style="margin:0 0 6px;">What I do</h3>
+          <div class="stack" aria-label="Core focus areas">
+            <span class="tag">Cloud Security</span>
+            <span class="tag">Networking</span>
+            <span class="tag">IT Support</span>
+            <span class="tag">AWS Fundamentals</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Databases</span>
+            <span class="tag">Documentation</span>
+          </div>
+        </div>
+
+        <div class="item">
+          <h3>Operational Impact</h3>
+          <div class="where">From recent contract work</div>
+          <ul>
+            <li>Resolved 20+ daily technical issues; supported system rollouts that reduced downtime by ~25%.</li>
+            <li>Leveraged SIEM tools to improve threat detection and system integrity; ensured prompt incident assessment.</li>
+            <li>Documented incidents for transparency and accountability.</li>
+            <li>Delivered upgrades and security measures reducing vulnerabilities by ~30% to support compliance.</li>
+            <li>Performed vulnerability testing and troubleshooting to strengthen cybersecurity posture and risk mitigation.</li>
+          </ul>
+        </div>
+
+        
+        <div class="item">
+          <h3>Currently Learning</h3>
+          <div class="where">Per Scholas • AWS re/Start</div>
+          <div class="stack" style="margin-top:10px;">
+            <span class="tag">Cloud Computing </span>
+            <span class="tag">Networking</span>
+            <span class="tag">Databases</span>
+            <span class="tag">AWS Cloud Management</span>
+            <span class="tag">Monitoring & Security</span>
+            <span class="tag">Automated and Repeatable deployments</span>
+            <span class="tag">AWS Machine Learning and Generative AI</span>
+            <span class="tag">Serverless and Containers</span>
+            <span class="tag">Governance Services</span>
+            <span class="tag">Firewalls</span>
+            <span class="tag">Shell-scripting</span>
+            <span class="tag">Systems Operations</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+    
+
+
+    <!-- ABOUT -->
+    <section id="about" class="card section">
+      <h2>About</h2>
+      <p style="margin:0; color:var(--muted)">
+        Cloud Support Associate with a Master's in Information Systems and hands-on experience deploying highly available and secure AWS environments. 
+        Skilled in VPC design, IAM security, EC2 automation, and CloudWatch monitoring. 
+        Currently completing the AWS re/Start program and actively pursuing AWS Certified Cloud Practitioner to further validate foundational cloud expertise. 
+        Seeking a Cloud Support or Junior Cloud Engineer role to leverage technical skills in automation and infrastructure management.
+      </p>
+    </section>
+
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="card section">
+      <h2>Technical Skills</h2>
+      <div class="twoCol">
+        <div class="item skillCard" data-skill="cloud">
+          <h3>Cloud (AWS)</h3>
+          <ul>
+            <li>Cloud concepts and core AWS services</li>
+            <li>AWS CLI installation and configuration</li>
+            <li>AWS Systems Manager (basic usage)</li>
+            <li>S3 static website hosting; EC2 instances</li>
+            <li>Scaling and load balancing architecture (intro)</li>
+            <li>VPC design: subnets, IGWs, security groups, NACLs</li>
+          </ul>
+        </div>
+
+        <div class="item skillCard" data-skill="security">
+          <h3>Systems, Networking, Security</h3>
+          <ul>
+            <li>Windows and Linux operating systems</li>
+            <li>Linux fundamentals: shell, users/groups, permissions, processes</li>
+            <li>Basic networking protocols and concepts</li>
+            <li>Vulnerability testing and troubleshooting</li>
+            <li>SIEM tooling exposure; incident assessment & documentation</li>
+          </ul>
+        </div>
+
+        <div class="item skillCard" data-skill="tools">
+          <h3>Tools & Productivity</h3>
+          <ul>
+            <li>Microsoft Office: Word, Excel, PowerPoint, Outlook, Calendar</li>
+            <li>Google Workspace</li>
+            <li>Documentation and knowledge-base writing</li>
+            <li>Windows Powershell, Ubuntu, Putty, Python, VS Code, Git, and GitHub. </li>
+          </ul>
+        </div>
+
+        <div class="item skillCard" data-skill="strengths">
+          <h3>Strengths</h3>
+          <ul>
+            <li>Analytical troubleshooting</li>
+            <li>Adaptability in fast-paced environments</li>
+            <li>Cross-functional collaboration</li>
+            <li>Operational excellence mindset</li>
+            <li>Technical resiliency</li>
+            <li>Problem-solving</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="card section">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="item">
+
+          <h3>AWS S3 Static Website</h3>
+          <div class="pills" aria-label="Project categories">
+            <span class="pill" data-pill="aws">AWS</span>
+            <span class="pill" data-pill="storage">CDN</span>
+            <span class="pill" data-pill="security">IAM</span>
+            <span class="pill" data-pill="web">Web</span>
+          </div>
+          <div class="where">S3 • CloudFront • IAM • Route 53</div>
+          <p class="small">Hosted a static site on S3 with secure bucket policies and (optionally) a custom domain.</p>
+          <ul>
+            <li>Set up S3 bucket and static hosting</li>
+            <li>Harden permissions; enable versioning</li>
+            <li>Add CloudFront + HTTPS (optional)</li>
+          </ul>
+          <div class="divider"></div>
+        </article>
+
+        <article class="item">
+          <h3>VPC + EC2 Network Lab</h3>
+          <div class="pills" aria-label="Project categories">
+            <span class="pill" data-pill="network">VPC</span>
+            <span class="pill" data-pill="aws">EC2</span>
+            <span class="pill" data-pill="security">Security Groups</span>
+            <span class="pill" data-pill="network">NACLs</span>
+          </div>
+          <div class="where">VPC • Subnets • Security Groups • NACLs</div>
+          <p class="small">Designed a VPC with public/private subnets and launched EC2 instances with least-privilege rules.</p>
+          <ul>
+            <li>Public + private subnet layout</li>
+            <li>Internet Gateway, routing, and NACL rules</li>
+            <li>SSH access via key pairs and hardened security group rules</li>
+          </ul>
+          <div class="divider"></div>
+        </article>
+
+        <article class="item">
+          <h3>Systems Manager Ops Toolkit</h3>
+          <div class="pills" aria-label="Project categories">
+            <span class="pill" data-pill="ops">Operations</span>
+            <span class="pill" data-pill="aws">SSM</span>
+            <span class="pill" data-pill="security">Patching</span>
+            <span class="pill" data-pill="ops">Automation</span>
+          </div>
+          <div class="where">SSM • Inventory • Patch • Run Command</div>
+          <p class="small">Used Systems Manager to manage fleet tasks and improve visibility across instances.</p>
+          <ul>
+            <li>SSM agent setup and permissions</li>
+            <li>Patch baseline + maintenance window</li>
+            <li>Run Command for common admin tasks</li>
+          </ul>
+          <div class="divider"></div>
+        </article>
+
+        <article class="item">
+          <h3>Security Incident Notes (SIEM)</h3>
+          <div class="pills" aria-label="Project categories">
+            <span class="pill" data-pill="security">SIEM</span>
+            <span class="pill" data-pill="security">Incident Response</span>
+            <span class="pill" data-pill="docs">Documentation</span>
+            <span class="pill" data-pill="ops">Triage</span>
+          </div>
+          <div class="where">Monitoring • Triage • Documentation</div>
+          <p class="small">Documented a lightweight process for incident triage and follow-up in a support environment.</p>
+          <ul>
+            <li>Alert validation + severity scoring</li>
+            <li>Evidence capture + escalation steps</li>
+            <li>Post-incident notes and transparency</li>
+          </ul>
+          <div class="divider"></div>
+        </article>
+      </div>
+    </section>
+
+
+
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="card section">
+      <h2>Experience</h2>
+
+      <div class="item">
+        <h3>Contractor • Express Employment Professionals</h3>
+        <div class="where">Columbia, SC • March 2018 – June 2025</div>
+        <ul>
+          <li>Resolved 20+ daily technical issues, enhanced device support and operational efficiency while collaborating on system rollouts that reduced downtime by 25%.</li>
+          <li>Leveraged SIEM tools to boost threat detection and system integrity; ensured prompt incident assessment and documented incidents for transparency and accountability.</li>
+          <li>Demonstrated adaptability and strong teamwork in fast-paced environments; contributed to seamless project execution and overall project success.</li>
+          <li>Orchestrated workstation upgrades for enhanced network capabilities; implemented robust security measures to reduce security vulnerabilities by 30% and ensure compliance with organizational policies.</li>
+          <li>Conducted network vulnerability testing and troubleshooting to improve the organization’s cybersecurity posture and risk mitigation strategies.</li>
+        </ul>
+      </div>
+
+      <div class="item" style="margin-top:16px;">
+        <h3>Network Technician • Virginia College</h3>
+        <div class="where">Columbia, SC • January 2016 – January 2018</div>
+        <ul>
+          <li>Performed onsite installation, maintenance, and repair of physical and virtual network infrastructure; resolved 97% of connectivity issues for students, staff, faculty, and administrative staff.</li>
+          <li>Monitored bandwidth and performance to ensure stable access to online learning platforms; reduced bandwidth latency by 30% during peak hours.</li>
+          <li>Executed regular data backups and implemented encryption protocols; secured 10TB+ of sensitive institutional data and achieved a 100% data recovery success rate.</li>
+          <li>Installed and repaired campus-wide cabling (fiber/copper) and wireless access points; improved network coverage by 25% across campus buildings.</li>
+        </ul>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- EDUCATION -->
+    <section id="education" class="card section">
+      <h2>Education</h2>
+      <div class="grid">
+        <div class="item">
+          <h3>Per Scholas — AWS re/Start Training</h3>
+          <div class="where">Remote • November 2026 – Present</div>
+          <ul>
+            <li>15-week virtual program covering cloud computing, networking, databases, and AWS monitoring/governance.</li>
+            <li>Weekly professional development: personal brand, technical resume, communication, collaboration.</li>
+            <li>Course focus: Linux, Python, Auto Scaling, EC2, Lambda, shell scripting, firewalls, Systems Manager, Redshift, DynamoDB.</li>
+          </ul>
+    
+        </div>
+
+        <div class="item">
+          <h3>South University — Master of Information Systems (MIS)</h3>
+          <div class="where">Savannah, GA (Remote) • January 2021 – March 2022</div>
+        </div>
+
+        <div class="item">
+          <h3>South University — Bachelor of Information Technology (BIT)</h3>
+          <div class="where">Columbia, SC (Campus) • September 2017 – December 2021</div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="card section">
+      <h2>Contact</h2>
+      <div class="twoCol">
+        <div class="item">
+          <h3>Let’s connect</h3>
+          <p class="small">Best way to reach me is email. I’m also active on LinkedIn.</p>
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;">
+            <a class="btn primary" href="mailto:Grant.quent@gmail.com">Grant.quent@gmail.com</a>
+            <a class="btn" href="https://www.linkedin.com/in/quentingrant/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+          <p class="small" style="margin-top:12px;">Location: Blythewood, South Carolina</p>
+        </div>
+
+        <form class="item" id="contactForm" novalidate>
+          <h3>Quick message</h3>
+          <label class="small" for="name">Name</label><br />
+          <input id="name" name="name" autocomplete="name" />
+          <label class="small" for="msg">Message</label><br />
+          <textarea id="msg" name="msg" rows="4"></textarea>
+          <button class="btn primary" type="submit">Send</button>
+          <p id="formHint" class="small" style="margin-top:10px;"></p>
+        </form>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div>© <span id="year"></span> Quentin Grant</div>
+      <div class="small">Themes • System mode • Color rails & pills</div>
+    </div>
+  </main>
+
+  <script>
+
+
+
+    // Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Copy email
+    const email = "Grant.quent@gmail.com";
+    const copyBtn = document.getElementById("copyEmail");
+    copyBtn?.addEventListener("click", async () => {
+      try{
+        await navigator.clipboard.writeText(email);
+        copyBtn.textContent = "Copied!";
+        setTimeout(() => (copyBtn.textContent = "Copy Email"), 1200);
+      }catch{
+        copyBtn.textContent = "Copy failed";
+        setTimeout(() => (copyBtn.textContent = "Copy Email"), 1200);
+      }
+    });
+
+
+
+    // Theme + mode (with system default)
+    const themes = ["aurora","cobalt","orchid","ember"];
+    const themeNames = { aurora:"Aurora", cobalt:"Cobalt", orchid:"Orchid", ember:"Ember" };
+
+    const themeBtn = document.getElementById("themeBtn");
+    const modeBtn  = document.getElementById("modeBtn");
+
+    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)");
+
+    const savedTheme = localStorage.getItem("theme");
+    const savedMode  = localStorage.getItem("mode");
+
+    if(savedTheme) document.body.dataset.theme = savedTheme;
+    if(savedMode){
+      document.body.dataset.mode = savedMode;
+    }else{
+      document.body.dataset.mode = (prefersDark && prefersDark.matches) ? "dark" : "light";
+    }
+
+    function refresh(){
+      const t = document.body.dataset.theme || "aurora";
+      const m = document.body.dataset.mode  || "dark";
+      themeBtn.textContent = `Theme: ${themeNames[t] || "Aurora"}`;
+      modeBtn.textContent  = `Mode: ${m[0].toUpperCase()}${m.slice(1)}`;
+    }
+
+    themeBtn.addEventListener("click", () => {
+      const cur = document.body.dataset.theme || "aurora";
+      const next = themes[(themes.indexOf(cur)+1) % themes.length];
+      document.body.dataset.theme = next;
+      localStorage.setItem("theme", next);
+      refresh();
+    });
+
+    modeBtn.addEventListener("click", () => {
+      const cur = document.body.dataset.mode || "dark";
+      const next = cur === "dark" ? "light" : "dark";
+      document.body.dataset.mode = next;
+      localStorage.setItem("mode", next);
+      refresh();
+    });
+
+    prefersDark?.addEventListener?.("change", (e) => {
+      const userSetMode = !!localStorage.getItem("mode");
+      if(userSetMode) return;
+      document.body.dataset.mode = e.matches ? "dark" : "light";
+      refresh();
+    });
+
+    refresh();
+
+
+
+    // Mailto form
+    const form = document.getElementById("contactForm");
+    const hint = document.getElementById("formHint");
+    form?.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const name = (document.getElementById("name").value || "").trim();
+      const msg  = (document.getElementById("msg").value || "").trim();
+      const subject = encodeURIComponent(`Portfolio message${name ? " from " + name : ""}`);
+      const body = encodeURIComponent(`${msg || "Hi Quentin,"}\n\n— ${name || "Your Name"}`);
+      hint.textContent = "Opening your email client…";
+      window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+      setTimeout(() => (hint.textContent = ""), 1800);
+    });
+  </script>
+</body>
+</html>
